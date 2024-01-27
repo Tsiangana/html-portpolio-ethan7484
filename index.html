@@ -20,17 +20,37 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan's Portfolio Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ethan's Portfolio</h1>
-    <h2>I'm a Web develop student</h2>
-    <hr>
-    <a href="./public/movie-ranking_ethan.html"><h2>Movie Ranking Project</h2></a>
-    <!--<h3><a href="./public/movie-ranking_ethan.html">Movie Ranking Project</a></h3> 강의 답안-->
-    <img src="./assets/images/movie-ranking_ethan.png" height="200" alt="movie ranking project image">
-    <h2><a href="./public/brithday-invite_ethan.html">Birthday Invite Project</a></h2>
-    <!--<h3><a href="./public/brithday-invite_ethan.html">Birthday Invite Project</a></h3> 강의 답안-->
-    <img src="./assets/images/birthday-invite_ethan.png" height="200" alt="birthday invite project image">
+    
+    <nav>
+        <h1>Ethan's Portfolio</h1>
+        <h2>I'm a Web develop student</h2>
+    </nav>
+
+    <div>
+        <a href="./public/movie-ranking_ethan.html">
+            <button class="cta">
+                <span>Movie Ranking Project</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </a>
+    </div>
+      
+    <div class="container">
+        <div class="content">
+            <!--<h3><a href="./public/movie-ranking_ethan.html">Movie Ranking Project</a></h3> 강의 답안-->
+            <img src="./assets/images/movie-ranking_ethan.png" alt="movie ranking project image">
+            <h2><a href="./public/brithday-invite_ethan.html">Birthday Invite Project</a></h2>
+            <!--<h3><a href="./public/brithday-invite_ethan.html">Birthday Invite Project</a></h3> 강의 답안-->
+            <img src="./assets/images/birthday-invite_ethan.png" alt="birthday invite project image">
+        </div>
+    </div>
+
     <hr>
     <a href="./public/about_ethan.html">About Me</a>
     <a href="./public/contact_ethan.html">Contact Me</a>
